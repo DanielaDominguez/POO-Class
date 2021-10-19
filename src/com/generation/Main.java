@@ -1,9 +1,13 @@
 package com.generation;
 
+import sun.security.krb5.internal.PAEncTSEnc;
+
 public class Main {
 
     public static void main(String[] args) {
 	// write your code here
+
+
         Perro lomito = new Perro();
         lomito.nombre = "Chems";
         lomito.edad = 1;
@@ -20,5 +24,8 @@ public class Main {
         lomito2.caractericticas();
         lomito2.dormir();
 
+        Perro lomito3 = new Perro("Milaneso");
+        Perro lomito4 = new Perro("Sr. Kawamura", "Husky", 4, "Gigante");
+        lomito4.caractericticas();
     }
 }

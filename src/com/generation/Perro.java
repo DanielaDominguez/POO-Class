@@ -6,6 +6,28 @@ public class Perro {
     int edad;
     String tamanio;
 
+    //constructor vacio
+    public Perro () {
+    }
+
+    //this.nombre se refiere al String nombre
+    // = nombre hace referencia a String nombre de public Perro
+    public Perro (String nombre) {
+        this.nombre = nombre;
+    }
+
+    public Perro (String nombre, String raza) {
+        this.nombre = nombre;
+        this.raza = raza;
+    }
+
+    public Perro (String nombre, String raza, int edad, String tamanio) {
+        this.nombre = nombre;
+        this.raza = raza;
+        this.edad = edad;
+        this.tamanio = tamanio;
+    }
+
     public void caractericticas(){
         System.out.println("Hola mi nombre es " + this.nombre
                 + ", soy de raza " + this.raza+" tengo " + this.edad + " años." + " Soy de tamaño " + this.tamanio );
